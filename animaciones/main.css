@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(2,1fr);
+  grid-gap: 2em;
+  margin: 2em;
+}
+
+img {
+  width: 16em;
+  height: 10em;
+  margin: 0 auto;
+}
+
+.posit {
+  padding: 1em;
+  background-color: rgb(200,100,100);
+  margin: 1em 0;
+  height: 13em;
+  width: 17em;
+  animation: bajada 4s;
+}
+
+
+
+/* posits individuales */
+
+@keyframes bajada {
+  from {transform: translateY();}
+  to {margin: 0;}
+}
+
+#pos0 {
+  transform: rotate(5deg);
+  animation-duration: 2s;
+}
+
+#pos1 {
+  transform: rotate(-2deg);
+  animation-duration: 2s;
+}
+
+#pos2 {
+  transform: rotate(-6deg);
+  animation-duration: 2s;
+}
+
+#pos3 {
+  transform: rotate(3deg);
+  animation-duration: 2s;
+}
+
+#pos4 {
+  transform: rotate(2deg);
+}
+
+#pos5 {
+  transform: rotate(10deg);
+}
+
+#pos6 {
+  transform: rotate(-4deg);
+}
+
+#pos7 {
+  transform: rotate(-5deg);
+}
+
+.posit:hover {
+  transform: rotate(0deg) !important;
+}
+

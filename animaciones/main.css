@@ -24,15 +24,14 @@ img {
   height: 13em;
   width: 17em;
   animation: bajada 4s;
+  transform: translateY(-40em);
 }
-
-
 
 /* posits individuales */
 
 @keyframes bajada {
-  from {transform: translateY();}
-  to {margin: 0;}
+  from {transform: translateY(-40em);}
+  to {transform: translateY(0em);}
 }
 
 #pos0 {
@@ -73,5 +72,6 @@ img {
 
 .posit:hover {
   transform: rotate(0deg) !important;
+  transform: scale(1.5) !important;
 }
 
